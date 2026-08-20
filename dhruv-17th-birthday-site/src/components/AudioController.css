@@ -1,0 +1,63 @@
+.audio-controller {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 500;
+}
+
+.audio-controller__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--off-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 14px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.audio-controller__btn:hover:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--black);
+}
+
+.audio-controller__btn:active:not(:disabled) {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 var(--black);
+}
+
+.audio-controller__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.audio-controller__state {
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--lime);
+  border: 2px solid var(--black);
+  padding: 2px 8px;
+}
+
+.audio-controller__btn[aria-pressed="true"] .audio-controller__state {
+  background: var(--pink);
+}
+
+.audio-controller__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .audio-controller {
+    bottom: 12px;
+    right: 12px;
+  }
+  .audio-controller__label {
+    display: none;
+  }
+  .audio-controller__btn {
+    padding: 10px 12px;
+  }
+}

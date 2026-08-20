@@ -1,0 +1,107 @@
+.wishes {
+  padding: 90px 20px 110px;
+  background: var(--black);
+  color: var(--black);
+}
+
+.wishes__title {
+  color: var(--off-white);
+  text-align: center;
+  font-size: clamp(1.8rem, 6.5vw, 3rem);
+  max-width: 780px;
+  margin: 0 auto 56px;
+}
+
+.wishes__board {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 28px;
+}
+
+.wishes__card {
+  grid-column: span 3;
+  padding: 24px 20px;
+  transform: rotate(var(--rotate, 0deg));
+  transition: transform 0.15s ease;
+  position: relative;
+}
+
+.wishes__card:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.wishes__card:nth-child(1) { grid-column: span 3; }
+.wishes__card:nth-child(2) { grid-column: span 3; }
+.wishes__card:nth-child(3) { grid-column: 2 / span 3; }
+.wishes__card:nth-child(4) { grid-column: span 3; }
+.wishes__card:nth-child(5) { grid-column: 2 / span 3; }
+
+.wishes__card--note {
+  background: var(--lime);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+}
+
+.wishes__card--screenshot {
+  background: var(--off-white);
+  border: 3px solid var(--black);
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-mono);
+}
+
+.wishes__card--sticky {
+  background: var(--pink);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  padding-top: 34px;
+}
+
+.wishes__pin {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--black);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+
+.wishes__card--index-card {
+  background: var(--off-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-sm);
+  background-image: repeating-linear-gradient(
+    transparent, transparent 22px, rgba(17,17,17,0.12) 23px
+  );
+}
+
+.wishes__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 600;
+}
+
+.wishes__card--screenshot .wishes__text {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .wishes__board {
+    grid-template-columns: 1fr;
+  }
+  .wishes__card,
+  .wishes__card:nth-child(1),
+  .wishes__card:nth-child(2),
+  .wishes__card:nth-child(3),
+  .wishes__card:nth-child(4),
+  .wishes__card:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+}
