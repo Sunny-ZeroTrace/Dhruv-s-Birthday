@@ -2,6 +2,6 @@ Drop the birthday song file here, named exactly:
 
 fyne-shyt.mp3
 
-Full path: public/audio/fyne-shyt.mp3
+Full path: audio/fyne-shyt.mp3
 
 The site works fine without it — the audio toggle will just show "N/A".

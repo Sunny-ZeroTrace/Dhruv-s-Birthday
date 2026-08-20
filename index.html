@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="Dhruv's Official Birthday Experience™ — 17 years of questionable decisions." />
+<title>DHRUV.EXE — OFFICIAL BIRTHDAY ARCHIVE™</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23111111%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23C8FF00%22 font-family=%22Arial Black%22>17</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- INTRO OVERLAY -->
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+  <div class="intro__noise" aria-hidden="true"></div>
+  <div class="intro__card">
+    <p class="intro__eyebrow mono">SYSTEM BOOT — DO NOT SKIP</p>
+    <h1 id="intro-title" class="intro__title">DHRUV'S<br>OFFICIAL<br>BIRTHDAY<br>EXPERIENCE<sup>™</sup></h1>
+
+    <div class="intro__rows mono">
+      <div class="intro__row"><span>AGE:</span><span class="intro__value">17</span></div>
+      <div class="intro__row"><span>STATUS:</span><span class="intro__value">SUSPICIOUSLY ALIVE</span></div>
+      <div class="intro__row"><span>SOUNDTRACK:</span><span class="intro__value">FYNE SHYT — GURU RANDHAWA</span></div>
+    </div>
+
+    <button class="intro__button" id="enterBtn"><span>[ ENTER THE NONSENSE ]</span></button>
+
+    <p class="intro__footnote mono">WARNING: CONTAINS 100% FRIENDSHIP AND 0% BUDGET</p>
+  </div>
+</div>
+
+<!-- STICKY AUDIO CONTROL -->
+<div class="audio-controller">
+  <audio id="anthem" src="audio/fyne-shyt.mp3" loop preload="none"></audio>
+  <button class="audio-controller__btn" id="audioBtn" aria-pressed="false" aria-label="Turn on Dhruv's anthem">
+    <span class="audio-controller__label mono">♫ DHRUV'S ANTHEM</span>
+    <span class="audio-controller__state mono" id="audioState">OFF</span>
+  </button>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__inner">
+      <p class="hero__label mono">OFFICIAL BIRTHDAY ARCHIVE™</p>
+      <h1 class="hero__title">DHRUV IS 17.</h1>
+      <p class="hero__subtitle">somehow.</p>
+
+      <div class="hero__photo-wrap">
+        <span class="sticker sticker--news hero__sticker-1">BREAKING NEWS</span>
+        <span class="sticker sticker--lime hero__sticker-2">17???</span>
+
+        <div class="hero__frame">
+          <img class="hero__photo" src="images/photo-1.webp" alt="Dhruv adjusting a bright pink tie in a dim classroom, looking deeply unbothered by the flash." width="1080" height="1080" />
+        </div>
+
+        <span class="sticker sticker--pink hero__sticker-3">HE MADE IT</span>
+        <span class="sticker sticker--outline hero__sticker-4">WHO APPROVED THIS</span>
+
+        <div class="hero__meta mono">
+          <span>AGE: 17</span>
+          <span>STATUS: STILL ALIVE</span>
+          <span>COMMON SENSE: NOT FOUND</span>
+          <span>OS: QUESTIONABLE</span>
+        </div>
+      </div>
+
+      <p class="hero__scroll mono" aria-hidden="true">↓ SCROLL FOR EVIDENCE ↓</p>
+    </div>
+  </section>
+
+  <!-- STATS / DHRUV.EXE -->
+  <section class="stats" aria-label="Dhruv system diagnostics">
+    <h2 class="stats__title">DHRUV.EXE</h2>
+    <p class="stats__subtitle mono">RUNNING DIAGNOSTIC SCAN…</p>
+
+    <div class="stats__grid">
+      <div class="stats__card" style="--tilt:-1deg">
+        <button class="stats__card-btn" data-egg="Request timed out." aria-expanded="false">
+          <span class="stats__label mono">AGE</span>
+          <span class="stats__value">17</span>
+          <span class="stats__note mono">CONFIRMED</span>
+        </button>
+      </div>
+      <div class="stats__card" style="--tilt:1deg">
+        <button class="stats__card-btn" data-egg="Request timed out." aria-expanded="false">
+          <span class="stats__label mono">BRAIN CELLS</span>
+          <span class="stats__value">???</span>
+          <span class="stats__note mono">SEARCHING…</span>
+        </button>
+      </div>
+      <div class="stats__card" style="--tilt:-1deg">
+        <button class="stats__card-btn" data-egg="Error 404: Common sense not found." aria-expanded="false">
+          <span class="stats__label mono">COMMON SENSE</span>
+          <span class="stats__value">404</span>
+          <span class="stats__note mono">NOT FOUND</span>
+        </button>
+      </div>
+      <div class="stats__card" style="--tilt:1deg">
+        <span class="stats__label mono">DECISION MAKING</span>
+        <span class="stats__value">questionable</span>
+        <span class="stats__note mono">AT BEST</span>
+      </div>
+      <div class="stats__card" style="--tilt:-1deg">
+        <span class="stats__label mono">AURA</span>
+        <span class="stats__value">unnecessarily high</span>
+        <span class="stats__note mono">UNVERIFIED</span>
+      </div>
+      <div class="stats__card" style="--tilt:1deg">
+        <span class="stats__label mono">PRODUCTIVITY</span>
+        <span class="stats__value">not detected</span>
+        <span class="stats__note mono">SCAN AGAIN?</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE GALLERY -->
+  <section class="evidence" aria-label="Photo evidence">
+    <div class="evidence__header">
+      <h2 class="evidence__title">THE EVIDENCE</h2>
+      <p class="evidence__subtitle">Unfortunately, we have photographic proof.</p>
+    </div>
+
+    <div class="evidence__grid">
+      <figure class="evidence__card evidence__card--lg" style="--rotate:-3deg">
+        <span class="sticker sticker--lime evidence__sticker">BREAKING NEWS</span>
+        <div class="evidence__frame">
+          <img src="images/photo-3.webp" alt="Dhruv standing outside a lit-up Global School sign at night, tie fully committed, expression fully serious." loading="lazy" />
+        </div>
+        <figcaption class="evidence__caption">
+          <span class="evidence__caption-title">BRO THOUGHT THIS WAS A JOB INTERVIEW</span>
+          <span class="evidence__caption-meta mono">POSITION: CEO OF NOTHING</span>
+        </figcaption>
+      </figure>
+
+      <figure class="evidence__card evidence__card--md" style="--rotate:2deg">
+        <div class="evidence__frame">
+          <img src="images/photo-2.webp" alt="Dhruv illuminated by a phone flash against pitch darkness and a tree trunk, tie still on, mission unclear." loading="lazy" />
+        </div>
+        <figcaption class="evidence__caption">
+          <span class="evidence__caption-title">BATMAN'S UNDERPAID INTERN</span>
+          <span class="evidence__caption-meta mono">SHIFT: 02:47 AM</span>
+        </figcaption>
+      </figure>
+
+      <figure class="evidence__card evidence__card--lg" style="--rotate:3deg">
+        <span class="sticker sticker--lime evidence__sticker">17???</span>
+        <div class="evidence__frame">
+          <img src="images/photo-4.webp" alt="Silhouette of Dhruv against a dusk sky, one hand raised to his hair, profile turned toward camera." loading="lazy" />
+        </div>
+        <figcaption class="evidence__caption">
+          <span class="evidence__caption-title">WHEN THE WIFI GOES OUT AND HE DISCOVERS NATURE</span>
+          <span class="evidence__caption-meta mono">CONNECTION STATUS: LOST</span>
+        </figcaption>
+      </figure>
+
+      <figure class="evidence__card evidence__card--md" style="--rotate:-4deg">
+        <span class="sticker sticker--lime evidence__sticker">WHO APPROVED THIS</span>
+        <div class="evidence__frame">
+          <img src="images/photo-5.webp" alt="Silhouette of Dhruv throwing double peace signs at dusk with a dramatic cloud behind him." loading="lazy" />
+        </div>
+        <figcaption class="evidence__caption">
+          <span class="evidence__caption-title">CAMERA: 144p</span>
+          <span class="evidence__caption-subtitle">DHRUV: 4K CONFIDENCE</span>
+          <span class="evidence__caption-meta mono">RESOLUTION: DOES NOT MATTER</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FIELD REPORT -->
+  <section class="field-report" aria-label="Field report">
+    <p class="field-report__stamp mono">CLASSIFIED — EYES ONLY</p>
+    <h2 class="field-report__title">FIELD REPORT: DHRUV</h2>
+
+    <ol class="field-report__list">
+      <li class="field-report__item"><span class="field-report__index mono">01</span><span class="field-report__text">Somehow always appears at exactly the right moment.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">02</span><span class="field-report__text">Has an unreasonable amount of confidence for someone with this decision-making ability.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">03</span><span class="field-report__text">Will turn absolutely anything into a joke, including this website.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">04</span><span class="field-report__text">Can be found doing something questionable in approximately 93% of photographs.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">05</span><span class="field-report__text">Somehow manages to be both annoying and fun to have around.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">06</span><span class="field-report__text">Has survived 17 years without a single software update.</span></li>
+      <li class="field-report__item"><span class="field-report__index mono">07</span><span class="field-report__text">Still pending bug fixes.</span></li>
+    </ol>
+  </section>
+
+  <!-- BIRTHDAY WISHES -->
+  <section class="wishes" aria-label="Birthday wishes">
+    <h2 class="wishes__title">PEOPLE WHO WERE FORCED<br>TO SAY NICE THINGS</h2>
+
+    <div class="wishes__board">
+      <div class="wishes__card wishes__card--note" style="--rotate:-4deg">
+        <p class="wishes__text">
+          <span class="wishes__line">Happy Birthday Dhruv 😭</span>
+          <span class="wishes__line">17 already is crazy.</span>
+          <span class="wishes__line">Stay the same idiot.</span>
+        </p>
+      </div>
+      <div class="wishes__card wishes__card--screenshot" style="--rotate:2deg">
+        <p class="wishes__text">
+          <span class="wishes__line">Bro really reached 17.</span>
+          <span class="wishes__line">Respectfully, how?</span>
+        </p>
+      </div>
+      <div class="wishes__card wishes__card--sticky" style="--rotate:-2deg">
+        <span class="wishes__pin" aria-hidden="true"></span>
+        <p class="wishes__text">
+          <span class="wishes__line">Happy birthday to one of the most chaotic people I know.</span>
+          <span class="wishes__line">Never become normal.</span>
+        </p>
+      </div>
+      <div class="wishes__card wishes__card--index-card" style="--rotate:3deg">
+        <p class="wishes__text">
+          <span class="wishes__line">17 years of Dhruv.</span>
+          <span class="wishes__line">The world survived somehow.</span>
+        </p>
+      </div>
+      <div class="wishes__card wishes__card--note" style="--rotate:1deg">
+        <p class="wishes__text">
+          <span class="wishes__line">Happy Birthday bro ❤️</span>
+          <span class="wishes__line">Keep doing dumb shit and making everyone laugh.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL MESSAGE -->
+  <section class="personal" aria-label="Personal message">
+    <div class="personal__inner">
+      <h2 class="personal__title">OKAY, JOKES ASIDE.</h2>
+
+      <div class="personal__content">
+        <div class="personal__text-block">
+          <p class="personal__text">
+            Happy 17th, Dhruv.
+            <br><br>
+            You're genuinely one of the weirdest people I've had the privilege of knowing.
+            <br><br>
+            Somehow you're simultaneously 17 years old and still operating with the decision-making skills of a confused refrigerator.
+            <br><br>
+            Never change.
+            <br>
+            Actually, maybe change a little.
+            <br><br>
+            Stay weird, idiot.
+            <br>
+            Have a good one.
+          </p>
+          <p class="personal__signature mono">— Sunny</p>
+        </div>
+
+        <div class="personal__photo-frame">
+          <img src="images/photo-4.webp" alt="Silhouette of Dhruv against a dusk sky, one hand raised to his hair, profile turned toward camera." loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL SECTION -->
+  <section class="final" aria-label="Closing">
+    <div class="final__photo-frame">
+      <img src="images/photo-6.jpg" alt="Dhruv in silhouette at dusk, arms open in a shrug, trees and evening sky behind him." loading="lazy" />
+    </div>
+
+    <h2 class="final__title">HAPPY 17TH,<br>DHRUV.</h2>
+    <p class="final__made-it">You made it.</p>
+    <p class="final__line mono">17 looks good on you, idiot.</p>
+
+    <div class="final__footer mono">
+      <span>MADE WITH 0 MONEY</span>
+      <span>100% FRIENDSHIP</span>
+      <span>QUESTIONABLE AMOUNTS OF CSS</span>
+    </div>
+
+    <p class="final__heart" aria-hidden="true">❤️</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
